@@ -1,0 +1,10 @@
+<h1>count page </h1>
+<a href="{%url 'home'%}">Home</a>
+<h1>there are {{count}} words in ur text</h1>
+<h2>{{fulltext}}</h2>
+
+<h1> word count: </h1>
+<!-- key is word and value in dictionary is count here in for loop -->
+{% for word, count in wordictionary %}
+{{word}} &nbsp;&nbsp; {{count}} <br/>
+{% endfor %}
